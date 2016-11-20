@@ -7,6 +7,6 @@ $("#comment-input").keydown(function(e) {
   }
 })
 
-onNewListItem("comments", function(newComment) {
-  commentDisplay.append("<div class=''>" + newComment + "</div>")
+onNewListItem("whats-my-name-again", function(newComment) {
+  commentDisplay.append("<span>" + newComment + "</span>")
 })
