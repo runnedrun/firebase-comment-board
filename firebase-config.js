@@ -1,6 +1,6 @@
 var firebaseConfig = {
   apiKey: "<your api key here>",
-  authDomain: "<replace your auth domain here>",
+  authDomain: "your=authdomain.firebaseapp.com",
   databaseURL: "https://classadoo-dev.firebaseio.com"	
 };
 
