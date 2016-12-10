@@ -1,14 +1,12 @@
-//addListItem("product-list", {name: "cool product"})
+var commentInput = $("#comment-input")
+var commentDisplay = $(".not-actually-the-right-class")
 
-var newProduct = {
-  name: "cool thing",
-  picture: "www.gogole.com"
-}
+commentInput.keydown(function(e) {
+  if (e.which == 13) {
+    addListItem("comments", commentInput.val());
+  }
+})
 
-onNewListItem("product-list", function(product) {
-  console.log(product.picture)
-  var nameHeader = $("<h1 class='product-name'>" + product.name + "</h1>")
-  var image = $("<img class='product-image'>").attr("src", "http://pix.iemoji.com/images/emoji/apple/ios-9/256/thinking-face.png")  
-
-  $(".product-list-container").append(nameHeader, image)
+onNewListItem("whats-my-name-again", function(newComment) {
+  commentDisplay.append("<span>" + newComment + "</span>")
 })

@@ -1,12 +1,12 @@
 var firebaseConfig = {
-  apiKey: "<your api key here>",
-  authDomain: "your-authdomain-here.firebaseapp.com",
-  databaseURL: "https://your-database-url.firebaseio.com"	
+  apiKey: "AIzaSyB4n3T-wB2G2UnIrMUU3hC7SqoXhPEb4L0",
+  authDomain: "classadoo-dev.firebaseapp.com",
+  databaseURL: "https://classadoo-dev.firebaseio.com"	
 };
 
 firebase.initializeApp(firebaseConfig);
 
-var store = firebase.database().ref("comment-challenge-2")
+var store = firebase.database().ref("comment-challenge")
 
 function storeValue(name, value) {	
   var obj = {}
